@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Text Image Generator</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1 class="title">Image Text Variation Generator</h1>
+
+    <div class="upload-box" id="drop-area">
+        <p>Drag & Drop Image Here</p>
+        <span>or</span>
+        <button onclick="document.getElementById('upload').click()">Choose Image</button>
+        <input type="file" id="upload" hidden>
+    </div>
+
+    <input type="text" id="textInput" placeholder="Enter text to add">
+
+    <button id="generateBtn">Generate 100 Images</button>
+
+    <div id="loading" class="hidden">Generating images… please wait</div>
+
+    <a id="downloadZip" class="hidden" href="#">Download ZIP</a>
+
+</div>
+
+<script src="/static/script.js"></script>
+</body>
+</html>
